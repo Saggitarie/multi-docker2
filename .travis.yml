@@ -20,7 +20,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID"  --password-stdin
 
   # Take those images and push them to docker hub
-  docker push saggitarie/multi-client2
-  docker push saggitarie/multi-nginx2
-  docker push saggitarie/multi-server2
-  docker push saggitarie/multi-worker2
+  - docker push saggitarie/multi-client2
+  - docker push saggitarie/multi-nginx2
+  - docker push saggitarie/multi-server2
+  - docker push saggitarie/multi-worker2
